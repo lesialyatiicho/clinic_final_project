@@ -1,16 +1,45 @@
-# React + Vite
+Clinic Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React web application for managing a small dental clinic.
 
-Currently, two official plugins are available:
+This project provides basic functionality for working with doctors and appointments.
+It was built as a practical React training project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Doctors
 
-## React Compiler
+Add a doctor (Full name, Phone, Specialization)
+Edit doctor information
+Delete doctor (with confirmation)
+Basic phone validation
+Appointments
+Create appointment (doctor, patient, date, time)
+Automatic slot handling (busy slots are disabled)
+Move appointment to another available time
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mark appointment as:
 
-## Expanding the ESLint configuration
+scheduled
+donе
+cancelled
+Delete appointment (with confirmation)
+Appointments are sorted by date and time
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+UI
+
+Light / Dark mode toggle
+Clean, classic interface
+Toast notifications
+Loading indicator for actions
+Proper empty states
+Responsive layout
+Data Persistence
+
+All data is stored in localStorage and remains after page refresh.
+
+Tech Stack
+
+React
+JavaScript
+CSS (custom styling, no UI libraries)
+localStorage API
